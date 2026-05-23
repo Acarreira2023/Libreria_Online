@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa JavaScript Moderno">
+  <rect width="640" height="480" fill="#fff3bd"/>
+  <rect x="170" y="48" width="300" height="386" rx="12" fill="#f6cf65"/>
+  <rect x="205" y="86" width="230" height="300" fill="#16202a"/>
+  <text x="230" y="190" fill="#f6cf65" font-family="Arial" font-size="82" font-weight="700">JS</text>
+  <text x="230" y="252" fill="#ffffff" font-family="Arial" font-size="36" font-weight="700">Moderno</text>
+  <rect x="230" y="292" width="150" height="10" fill="#d95f43"/>
+</svg>

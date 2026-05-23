@@ -1,0 +1,57 @@
+.footer {
+  background: #16202a;
+  color: #ffffff;
+  padding: 32px 0;
+}
+
+.content {
+  width: min(1120px, calc(100% - 32px));
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) 1.5fr;
+  gap: 32px;
+  margin: 0 auto;
+}
+
+.info h2,
+.creatorCard h3 {
+  margin: 0;
+}
+
+.info p,
+.creatorCard p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.creatorCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #d95f43;
+  font-weight: 800;
+}
+
+@media (max-width: 860px) {
+  .content,
+  .team {
+    grid-template-columns: 1fr;
+  }
+}

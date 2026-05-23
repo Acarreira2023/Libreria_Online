@@ -1,0 +1,29 @@
+.notFound {
+  max-width: 560px;
+  display: grid;
+  gap: 16px;
+}
+
+.notFound h1 {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.notFound p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.notFound a {
+  width: fit-content;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-weight: 900;
+  padding: 0 16px;
+  text-decoration: none;
+}

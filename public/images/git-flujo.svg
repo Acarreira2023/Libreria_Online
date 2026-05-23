@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa Git y Flujo de Trabajo">
+  <rect width="640" height="480" fill="#eceff2"/>
+  <rect x="166" y="46" width="306" height="388" rx="12" fill="#16202a"/>
+  <path d="M256 135 L360 239 L256 343" fill="none" stroke="#d95f43" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="256" cy="135" r="28" fill="#f6cf65"/>
+  <circle cx="360" cy="239" r="28" fill="#71a7a6"/>
+  <circle cx="256" cy="343" r="28" fill="#ffffff"/>
+  <text x="210" y="404" fill="#ffffff" font-family="Arial" font-size="40" font-weight="700">Git Flow</text>
+</svg>

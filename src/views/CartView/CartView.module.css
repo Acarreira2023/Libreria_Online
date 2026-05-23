@@ -1,0 +1,159 @@
+.cart,
+.empty {
+  display: grid;
+  gap: 24px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.heading h1,
+.empty h1 {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.heading button {
+  min-height: 42px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--color-accent);
+  font-weight: 800;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.items {
+  display: grid;
+  gap: 14px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr) auto 42px;
+  gap: 16px;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 14px;
+}
+
+.item img {
+  width: 92px;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.itemInfo h2,
+.itemInfo p {
+  margin: 0;
+}
+
+.itemInfo h2 {
+  color: var(--color-ink);
+  font-size: 1rem;
+}
+
+.itemInfo p,
+.itemInfo span,
+.empty p {
+  color: var(--color-muted);
+}
+
+.itemInfo {
+  display: grid;
+  gap: 5px;
+}
+
+.iconButton {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 8px;
+  background: #f7e6e2;
+  color: var(--color-accent);
+  cursor: pointer;
+}
+
+.summary {
+  display: grid;
+  gap: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.summary h2 {
+  margin: 0;
+  color: var(--color-ink);
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 18px;
+}
+
+.totalRow strong {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.summary a,
+.empty a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-weight: 900;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+.empty {
+  max-width: 560px;
+}
+
+.empty a {
+  width: fit-content;
+}
+
+@media (max-width: 860px) {
+  .content,
+  .item {
+    grid-template-columns: 1fr;
+  }
+
+  .item img {
+    width: 100%;
+  }
+
+  .iconButton {
+    width: 100%;
+  }
+}

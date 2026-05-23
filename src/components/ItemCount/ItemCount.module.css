@@ -1,0 +1,32 @@
+.counter {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 42px 52px 42px;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.counter button {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  cursor: pointer;
+}
+
+.counter button:disabled {
+  color: #a5adb5;
+  cursor: not-allowed;
+}
+
+.counter span {
+  text-align: center;
+  font-weight: 800;
+}

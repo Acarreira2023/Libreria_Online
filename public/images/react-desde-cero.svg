@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa React desde Cero">
+  <rect width="640" height="480" fill="#dceff4"/>
+  <rect x="140" y="46" width="300" height="388" rx="12" fill="#1f6f8b"/>
+  <rect x="188" y="98" width="204" height="34" fill="#ffffff" opacity="0.85"/>
+  <text x="190" y="190" fill="#ffffff" font-family="Arial" font-size="46" font-weight="700">React</text>
+  <text x="190" y="244" fill="#f6cf65" font-family="Arial" font-size="38" font-weight="700">desde</text>
+  <text x="190" y="298" fill="#ffffff" font-family="Arial" font-size="46" font-weight="700">Cero</text>
+  <circle cx="420" cy="110" r="56" fill="#f6cf65"/>
+</svg>

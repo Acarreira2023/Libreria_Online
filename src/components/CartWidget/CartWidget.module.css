@@ -1,0 +1,19 @@
+.cartWidget {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge {
+  min-width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0 7px;
+}

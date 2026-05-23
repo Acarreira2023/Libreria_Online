@@ -1,0 +1,62 @@
+[
+  {
+    "id": "libro-01",
+    "titulo": "React desde Cero",
+    "autor": "Sofia Mercado",
+    "categoria": "Frontend",
+    "precio": 18500,
+    "stock": 8,
+    "imagen": "/images/react-desde-cero.svg",
+    "descripcion": "Una guia practica para comprender componentes, props, estado y eventos creando interfaces modernas."
+  },
+  {
+    "id": "libro-02",
+    "titulo": "JavaScript Moderno",
+    "autor": "Mateo Alvarez",
+    "categoria": "Programacion",
+    "precio": 21400,
+    "stock": 5,
+    "imagen": "/images/javascript-moderno.svg",
+    "descripcion": "Conceptos actuales de JavaScript: modulos, asincronia, arrays, objetos y buenas practicas para la web."
+  },
+  {
+    "id": "libro-03",
+    "titulo": "CSS para Interfaces",
+    "autor": "Valentina Rios",
+    "categoria": "Diseno Web",
+    "precio": 16900,
+    "stock": 10,
+    "imagen": "/images/css-interfaces.svg",
+    "descripcion": "Tecnicas de layout, responsive design y sistemas visuales para construir experiencias claras y consistentes."
+  },
+  {
+    "id": "libro-04",
+    "titulo": "APIs con Node.js",
+    "autor": "Tomas Cabrera",
+    "categoria": "Backend",
+    "precio": 23800,
+    "stock": 4,
+    "imagen": "/images/apis-node.svg",
+    "descripcion": "Fundamentos para crear servicios, rutas, controladores y respuestas JSON pensadas para aplicaciones frontend."
+  },
+  {
+    "id": "libro-05",
+    "titulo": "UX para E-commerce",
+    "autor": "Camila Duarte",
+    "categoria": "Experiencia",
+    "precio": 19750,
+    "stock": 7,
+    "imagen": "/images/ux-ecommerce.svg",
+    "descripcion": "Patrones de navegacion, fichas de producto, carritos y decisiones de interfaz para tiendas digitales."
+  },
+  {
+    "id": "libro-06",
+    "titulo": "Git y Flujo de Trabajo",
+    "autor": "Nicolas Vera",
+    "categoria": "Herramientas",
+    "precio": 14500,
+    "stock": 6,
+    "imagen": "/images/git-flujo.svg",
+    "descripcion": "Control de versiones, ramas, commits y estrategias simples para colaborar en proyectos de desarrollo."
+  }
+]
