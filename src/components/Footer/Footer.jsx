@@ -22,8 +22,8 @@ function Footer() {
         <section className={styles.info}>
           <h2>Libreria Online</h2>
           <p>
-            Tienda digital de libros tecnicos y creativos. Pre-entrega React JS con
-            catalogo, ruteo y carrito gestionado con Context API.
+            Somos una libreria online dedicada a acercarte lecturas tecnicas,
+            creativas y profesionales con una compra simple, rapida y segura.
           </p>
         </section>
 

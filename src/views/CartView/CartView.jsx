@@ -57,7 +57,12 @@ function CartView() {
             <span>Total</span>
             <strong>{formatPrice(cartTotal)}</strong>
           </div>
-          <Link to="/productos">Seguir comprando</Link>
+          <button className={styles.checkoutButton} type="button">
+            Finalizar compra
+          </button>
+          <Link className={styles.keepBuyingLink} to="/productos">
+            Seguir comprando
+          </Link>
         </aside>
       </div>
     </section>

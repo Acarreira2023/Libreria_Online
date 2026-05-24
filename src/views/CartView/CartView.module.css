@@ -121,7 +121,8 @@
   font-size: 1.25rem;
 }
 
-.summary a,
+.checkoutButton,
+.keepBuyingLink,
 .empty a {
   min-height: 44px;
   display: inline-flex;
@@ -133,6 +134,17 @@
   font-weight: 900;
   padding: 0 16px;
   text-decoration: none;
+}
+
+.checkoutButton {
+  border: 0;
+  cursor: pointer;
+}
+
+.keepBuyingLink {
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  color: var(--color-primary);
 }
 
 .empty {
