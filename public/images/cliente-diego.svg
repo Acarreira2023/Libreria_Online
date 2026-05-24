@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Foto de Diego Perez">
+  <rect width="120" height="120" rx="60" fill="#f5ebe0"/>
+  <circle cx="60" cy="48" r="24" fill="#4c3428"/>
+  <path d="M22 112c8-28 26-42 38-42s30 14 38 42" fill="#8f5b3f"/>
+  <circle cx="60" cy="54" r="18" fill="#d09a76"/>
+  <path d="M40 43c10-16 32-18 42 1c-14-2-27-4-42-1z" fill="#2a1b15"/>
+</svg>

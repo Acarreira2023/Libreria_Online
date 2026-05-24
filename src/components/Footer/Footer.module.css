@@ -24,7 +24,7 @@
 
 .reviews {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -48,8 +48,21 @@
 .stars {
   display: flex;
   gap: 3px;
-  color: #f6cf65;
   margin: 6px 0;
+}
+
+.starFilled {
+  color: #f6cf65;
+}
+
+.starEmpty {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 1100px) {
+  .reviews {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 860px) {

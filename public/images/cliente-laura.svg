@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Foto de Laura Medina">
+  <rect width="120" height="120" rx="60" fill="#fff1f2"/>
+  <circle cx="60" cy="48" r="26" fill="#7b3f61"/>
+  <path d="M22 112c8-28 26-42 38-42s30 14 38 42" fill="#d95f43"/>
+  <circle cx="60" cy="55" r="18" fill="#e0a68e"/>
+  <path d="M36 48c6-24 42-24 48 0c-18-5-31-7-48 0z" fill="#4a2438"/>
+</svg>
