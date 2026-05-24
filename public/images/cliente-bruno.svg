@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Foto de Bruno Gomez">
+  <rect width="120" height="120" rx="60" fill="#dceff4"/>
+  <circle cx="60" cy="48" r="24" fill="#2c5168"/>
+  <path d="M22 112c8-28 26-42 38-42s30 14 38 42" fill="#1f6f8b"/>
+  <circle cx="60" cy="53" r="18" fill="#c98f73"/>
+  <path d="M39 42c8-18 36-18 43 2c-15-5-28-5-43-2z" fill="#16202a"/>
+</svg>

@@ -13,24 +13,24 @@
 }
 
 .info h2,
-.creatorCard h3 {
+.reviewCard h3 {
   margin: 0;
 }
 
 .info p,
-.creatorCard p {
+.reviewCard p {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.team {
+.reviews {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
-.creatorCard {
+.reviewCard {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
@@ -38,20 +38,23 @@
 }
 
 .avatar {
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
-  background: #d95f43;
-  font-weight: 800;
+  object-fit: cover;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  color: #f6cf65;
+  margin: 6px 0;
 }
 
 @media (max-width: 860px) {
   .content,
-  .team {
+  .reviews {
     grid-template-columns: 1fr;
   }
 }

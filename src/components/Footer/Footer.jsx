@@ -1,17 +1,21 @@
+import { Star } from 'lucide-react';
 import styles from './Footer.module.css';
 
-const creators = [
+const reviews = [
   {
-    name: 'Ana Biblioteca',
-    role: 'Catalogo y contenido',
+    name: 'Ana Martinez',
+    comment: 'Compre una novela de suspenso y llego rapido, muy bien cuidada.',
+    avatar: '/images/cliente-ana.svg',
   },
   {
-    name: 'Bruno Dev',
-    role: 'Frontend React',
+    name: 'Bruno Gomez',
+    comment: 'El catalogo por categorias me ayudo a encontrar libros tecnicos enseguida.',
+    avatar: '/images/cliente-bruno.svg',
   },
   {
-    name: 'Carla UX',
-    role: 'Experiencia de compra',
+    name: 'Carla Ruiz',
+    comment: 'Muy buena seleccion de libros espirituales y proceso de compra simple.',
+    avatar: '/images/cliente-carla.svg',
   },
 ];
 
@@ -27,13 +31,18 @@ function Footer() {
           </p>
         </section>
 
-        <section className={styles.team} aria-label="Creadores del sitio">
-          {creators.map((creator) => (
-            <article className={styles.creatorCard} key={creator.name}>
-              <span className={styles.avatar}>{creator.name.charAt(0)}</span>
+        <section className={styles.reviews} aria-label="Opiniones de clientes">
+          {reviews.map((review) => (
+            <article className={styles.reviewCard} key={review.name}>
+              <img className={styles.avatar} src={review.avatar} alt={`Foto de ${review.name}`} />
               <div>
-                <h3>{creator.name}</h3>
-                <p>{creator.role}</p>
+                <h3>{review.name}</h3>
+                <div className={styles.stars} aria-label="Calificacion de 5 estrellas">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star size={15} fill="currentColor" strokeWidth={0} key={star} />
+                  ))}
+                </div>
+                <p>{review.comment}</p>
               </div>
             </article>
           ))}
