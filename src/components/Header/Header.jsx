@@ -10,7 +10,7 @@ function Header() {
           <BookOpen size={30} strokeWidth={2.2} aria-hidden="true" />
           <div>
             <span className={styles.brandName}>Libreria Online</span>
-            <span className={styles.brandTagline}>Libros para aprender creando</span>
+            <span className={styles.brandTagline}>Lecturas para cada momento</span>
           </div>
         </div>
         <NavBar />

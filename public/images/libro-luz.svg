@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa Camino de Luz">
+  <rect width="640" height="480" fill="#f2f7ff"/>
+  <rect x="158" y="48" width="320" height="384" rx="12" fill="#1f6f8b"/>
+  <path d="M318 110l26 76l80 2l-64 46l24 78l-66-48l-66 48l24-78l-64-46l80-2z" fill="#f6cf65"/>
+  <text x="208" y="370" fill="#ffffff" font-family="Arial" font-size="38" font-weight="700">Camino</text>
+  <text x="208" y="410" fill="#f6cf65" font-family="Arial" font-size="34" font-weight="700">de Luz</text>
+</svg>

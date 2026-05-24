@@ -3,7 +3,7 @@
     "id": "libro-01",
     "titulo": "React desde Cero",
     "autor": "Sofia Mercado",
-    "categoria": "Frontend",
+    "categoria": "Tecnico",
     "precio": 18500,
     "stock": 8,
     "imagen": "/images/react-desde-cero.svg",
@@ -13,7 +13,7 @@
     "id": "libro-02",
     "titulo": "JavaScript Moderno",
     "autor": "Mateo Alvarez",
-    "categoria": "Programacion",
+    "categoria": "Tecnico",
     "precio": 21400,
     "stock": 5,
     "imagen": "/images/javascript-moderno.svg",
@@ -21,42 +21,102 @@
   },
   {
     "id": "libro-03",
-    "titulo": "CSS para Interfaces",
-    "autor": "Valentina Rios",
-    "categoria": "Diseno Web",
-    "precio": 16900,
-    "stock": 10,
-    "imagen": "/images/css-interfaces.svg",
-    "descripcion": "Tecnicas de layout, responsive design y sistemas visuales para construir experiencias claras y consistentes."
+    "titulo": "La Casa del Silencio",
+    "autor": "Elena Varela",
+    "categoria": "Terror",
+    "precio": 17200,
+    "stock": 6,
+    "imagen": "/images/libro-terror.svg",
+    "descripcion": "Una novela inquietante sobre una familia que descubre secretos ocultos en una casa abandonada."
   },
   {
     "id": "libro-04",
-    "titulo": "APIs con Node.js",
-    "autor": "Tomas Cabrera",
-    "categoria": "Backend",
-    "precio": 23800,
-    "stock": 4,
-    "imagen": "/images/apis-node.svg",
-    "descripcion": "Fundamentos para crear servicios, rutas, controladores y respuestas JSON pensadas para aplicaciones frontend."
+    "titulo": "Sombras en el Bosque",
+    "autor": "Martin Casal",
+    "categoria": "Terror",
+    "precio": 15800,
+    "stock": 9,
+    "imagen": "/images/libro-sombras.svg",
+    "descripcion": "Relatos de terror psicologico donde cada sendero parece esconder una presencia imposible de explicar."
   },
   {
     "id": "libro-05",
-    "titulo": "UX para E-commerce",
-    "autor": "Camila Duarte",
-    "categoria": "Experiencia",
-    "precio": 19750,
-    "stock": 7,
-    "imagen": "/images/ux-ecommerce.svg",
-    "descripcion": "Patrones de navegacion, fichas de producto, carritos y decisiones de interfaz para tiendas digitales."
+    "titulo": "Cartas de Abril",
+    "autor": "Lucia Ferrer",
+    "categoria": "Romantico",
+    "precio": 14900,
+    "stock": 10,
+    "imagen": "/images/libro-romantico.svg",
+    "descripcion": "Una historia de amor, distancia y segundas oportunidades narrada a traves de cartas encontradas."
   },
   {
     "id": "libro-06",
-    "titulo": "Git y Flujo de Trabajo",
-    "autor": "Nicolas Vera",
-    "categoria": "Herramientas",
-    "precio": 14500,
+    "titulo": "Cafe para Dos",
+    "autor": "Nicolas Rivas",
+    "categoria": "Romantico",
+    "precio": 13600,
+    "stock": 7,
+    "imagen": "/images/libro-cafe.svg",
+    "descripcion": "Dos desconocidos se cruzan cada jueves en el mismo cafe y descubren una conexion inesperada."
+  },
+  {
+    "id": "libro-07",
+    "titulo": "El Ultimo Testigo",
+    "autor": "Camila Duarte",
+    "categoria": "Suspenso",
+    "precio": 18900,
+    "stock": 5,
+    "imagen": "/images/libro-suspenso.svg",
+    "descripcion": "Un thriller atrapante sobre una investigacion donde todos mienten y una sola persona vio la verdad."
+  },
+  {
+    "id": "libro-08",
+    "titulo": "Clave Medianoche",
+    "autor": "Tomas Cabrera",
+    "categoria": "Suspenso",
+    "precio": 20100,
+    "stock": 4,
+    "imagen": "/images/libro-clave.svg",
+    "descripcion": "Una carrera contra el tiempo para descifrar una clave antes de que desaparezca la prueba final."
+  },
+  {
+    "id": "libro-09",
+    "titulo": "El Poder de la Mente",
+    "autor": "Valentina Rios",
+    "categoria": "Metafisico",
+    "precio": 16300,
+    "stock": 8,
+    "imagen": "/images/libro-mente.svg",
+    "descripcion": "Reflexiones y ejercicios para explorar el pensamiento, la intencion y el crecimiento personal."
+  },
+  {
+    "id": "libro-10",
+    "titulo": "Energia Interior",
+    "autor": "Bruno Salvatierra",
+    "categoria": "Metafisico",
+    "precio": 15200,
     "stock": 6,
-    "imagen": "/images/git-flujo.svg",
-    "descripcion": "Control de versiones, ramas, commits y estrategias simples para colaborar en proyectos de desarrollo."
+    "imagen": "/images/libro-energia.svg",
+    "descripcion": "Una lectura introductoria sobre equilibrio, habitos conscientes y conexion entre mente y cuerpo."
+  },
+  {
+    "id": "libro-11",
+    "titulo": "Camino de Luz",
+    "autor": "Ana Robles",
+    "categoria": "Espiritual",
+    "precio": 14100,
+    "stock": 9,
+    "imagen": "/images/libro-luz.svg",
+    "descripcion": "Un libro de espiritualidad cotidiana para encontrar calma, proposito y gratitud en pequenas acciones."
+  },
+  {
+    "id": "libro-12",
+    "titulo": "Meditaciones Simples",
+    "autor": "Federico Luna",
+    "categoria": "Espiritual",
+    "precio": 12900,
+    "stock": 11,
+    "imagen": "/images/libro-meditaciones.svg",
+    "descripcion": "Practicas breves de meditacion y respiracion para incorporar momentos de paz durante el dia."
   }
 ]

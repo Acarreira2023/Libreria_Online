@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa Cartas de Abril">
+  <rect width="640" height="480" fill="#fff1f2"/>
+  <rect x="158" y="48" width="320" height="384" rx="12" fill="#d95f43"/>
+  <rect x="210" y="128" width="216" height="150" rx="8" fill="#ffffff"/>
+  <path d="M210 128l108 88 108-88" fill="none" stroke="#d95f43" stroke-width="10"/>
+  <text x="206" y="356" fill="#ffffff" font-family="Arial" font-size="40" font-weight="700">Cartas</text>
+  <text x="206" y="398" fill="#f6cf65" font-family="Arial" font-size="34" font-weight="700">de Abril</text>
+</svg>

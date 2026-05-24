@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa Clave Medianoche">
+  <rect width="640" height="480" fill="#eef0f4"/>
+  <rect x="158" y="48" width="320" height="384" rx="12" fill="#26364a"/>
+  <rect x="222" y="130" width="192" height="120" rx="12" fill="#101820"/>
+  <circle cx="318" cy="190" r="28" fill="#f6cf65"/>
+  <rect x="305" y="214" width="26" height="70" fill="#f6cf65"/>
+  <text x="210" y="366" fill="#ffffff" font-family="Arial" font-size="38" font-weight="700">Clave</text>
+  <text x="210" y="406" fill="#d95f43" font-family="Arial" font-size="30" font-weight="700">Medianoche</text>
+</svg>

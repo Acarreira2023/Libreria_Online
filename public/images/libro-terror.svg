@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa La Casa del Silencio">
+  <rect width="640" height="480" fill="#1b1d24"/>
+  <rect x="158" y="48" width="320" height="384" rx="12" fill="#2b2f3a"/>
+  <rect x="218" y="135" width="200" height="185" fill="#12141a"/>
+  <path d="M248 320V185l70-58 70 58v135" fill="#3d4654"/>
+  <rect x="300" y="248" width="36" height="72" fill="#d95f43"/>
+  <text x="205" y="386" fill="#ffffff" font-family="Arial" font-size="34" font-weight="700">La Casa</text>
+  <text x="205" y="420" fill="#f6cf65" font-family="Arial" font-size="26" font-weight="700">del Silencio</text>
+</svg>

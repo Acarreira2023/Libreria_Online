@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa Meditaciones Simples">
+  <rect width="640" height="480" fill="#eef7ef"/>
+  <rect x="158" y="48" width="320" height="384" rx="12" fill="#24764b"/>
+  <circle cx="318" cy="168" r="72" fill="#ffffff"/>
+  <path d="M250 280c40-42 96-42 136 0c-22 34-114 34-136 0z" fill="#f6cf65"/>
+  <text x="196" y="360" fill="#ffffff" font-family="Arial" font-size="34" font-weight="700">Meditaciones</text>
+  <text x="196" y="400" fill="#d5dde6" font-family="Arial" font-size="30" font-weight="700">Simples</text>
+</svg>

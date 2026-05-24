@@ -24,6 +24,35 @@
   color: var(--color-muted);
 }
 
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  min-height: 40px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--color-muted);
+  font-weight: 800;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.filters button:hover,
+.activeFilter {
+  border-color: var(--color-primary);
+  background: var(--color-surface-strong);
+  color: var(--color-primary);
+}
+
+.resultCount {
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
