@@ -8,46 +8,60 @@
 
 .content {
   width: min(1120px, calc(100% - 32px));
-  display: grid;
-  gap: 24px;
   margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
-/* Reutilizamos prácticamente lo mismo que tenías */
+/* CARD */
 
 .reviewCard {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
+  gap: 12px;
+
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 8px;
+
   background: rgba(255, 255, 255, 0.03);
-  padding: 16px;
+
+  padding: 14px;
+  min-height: 140px;
 }
 
 .reviewCard h3 {
   margin: 0;
-  line-height: 1.25;
+  font-size: 15px;
+  line-height: 1.2;
 }
 
 .reviewCard p {
   margin: 0;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.45;
   color: rgba(255, 255, 255, 0.72);
 }
 
+/* AVATAR */
+
 .avatar {
-  width: 64px;
-  height: 64px;
+  width: 52px;
+  height: 52px;
+
   flex: 0 0 auto;
+
   border-radius: 50%;
   object-fit: cover;
 }
 
+/* STARS */
+
 .stars {
   display: flex;
-  gap: 3px;
-  margin: 6px 0;
+  gap: 2px;
+  margin: 5px 0 8px;
 }
 
 .starFilled {
@@ -58,14 +72,27 @@
   color: rgba(255, 255, 255, 0.25);
 }
 
-@media (max-width: 860px) {
+/* TABLET */
+
+@media (max-width: 900px) {
   .content {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 460px) {
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
   .reviewCard {
-    flex-direction: column;
+    padding: 12px;
+  }
+
+  .avatar {
+    width: 48px;
+    height: 48px;
   }
 }
