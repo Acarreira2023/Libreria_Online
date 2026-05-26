@@ -5,31 +5,31 @@ const reviews = [
   {
     name: 'Ana Martinez',
     comment: 'Compre una novela de suspenso y llego rapido, muy bien cuidada.',
-    avatar: '/images/cliente-ana.svg',
+    avatar: '/images/Ana-Martinez.jpg',
     rating: 5,
   },
   {
     name: 'Bruno Gomez',
     comment: 'El catalogo por categorias me ayudo a encontrar libros tecnicos enseguida.',
-    avatar: '/images/cliente-bruno.svg',
+    avatar: '/images/Bruno-Gomez.jpg',
     rating: 4,
   },
   {
     name: 'Carla Ruiz',
     comment: 'Muy buena seleccion de libros espirituales y proceso de compra simple.',
-    avatar: '/images/cliente-carla.svg',
+    avatar: '/images/Carla-Ruiz.jpg',
     rating: 5,
   },
   {
     name: 'Diego Perez',
     comment: 'Buena variedad de terror y suspenso. Me gustaria ver mas novedades pronto.',
-    avatar: '/images/cliente-diego.svg',
+    avatar: '/images/Diego-Perez.jpg',
     rating: 4,
   },
   {
     name: 'Laura Medina',
     comment: 'La compra fue clara y encontre rapido un regalo romantico para una amiga.',
-    avatar: '/images/cliente-laura.svg',
+    avatar: '/images/Laura-Medina.jpg',
     rating: 5,
   },
 ];
