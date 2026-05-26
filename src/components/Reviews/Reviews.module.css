@@ -1,0 +1,71 @@
+/* src/components/Reviews/Reviews.module.css */
+
+.reviewsSection {
+  background: #16202a;
+  color: #ffffff;
+  padding: 32px 0;
+}
+
+.content {
+  width: min(1120px, calc(100% - 32px));
+  display: grid;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+/* Reutilizamos prácticamente lo mismo que tenías */
+
+.reviewCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 16px;
+}
+
+.reviewCard h3 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.reviewCard p {
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  margin: 6px 0;
+}
+
+.starFilled {
+  color: #f6cf65;
+}
+
+.starEmpty {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 860px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 460px) {
+  .reviewCard {
+    flex-direction: column;
+  }
+}

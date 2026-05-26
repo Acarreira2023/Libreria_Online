@@ -1,5 +1,6 @@
 import Footer from '../Footer/Footer.jsx';
 import Header from '../Header/Header.jsx';
+import Reviews from '../Reviews/Reviews.jsx';
 import styles from './Layout.module.css';
 
 function Layout({ children }) {
@@ -7,6 +8,7 @@ function Layout({ children }) {
     <div className={styles.appShell}>
       <Header />
       <main className={styles.mainContent}>{children}</main>
+       <Reviews />
       <Footer />
     </div>
   );

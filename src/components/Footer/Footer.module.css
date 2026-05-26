@@ -1,3 +1,5 @@
+/* src/components/Footer/Footer.module.css */
+
 .footer {
   background: #16202a;
   color: #ffffff;
@@ -6,8 +8,6 @@
 
 .content {
   width: min(1120px, calc(100% - 32px));
-  display: grid;
-  gap: 24px;
   margin: 0 auto;
 }
 
@@ -15,71 +15,10 @@
   max-width: 680px;
 }
 
-.info h2,
-.reviewCard h3 {
+.info h2 {
   margin: 0;
 }
 
-.info p,
-.reviewCard p {
+.info p {
   color: rgba(255, 255, 255, 0.72);
-}
-
-.reviews {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 16px;
-}
-
-.reviewCard {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  padding: 16px;
-}
-
-.reviewCard h3 {
-  line-height: 1.25;
-}
-
-.avatar {
-  width: 64px;
-  height: 64px;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.stars {
-  display: flex;
-  gap: 3px;
-  margin: 6px 0;
-}
-
-.reviewCard p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-.starFilled {
-  color: #f6cf65;
-}
-
-.starEmpty {
-  color: rgba(255, 255, 255, 0.25);
-}
-
-@media (max-width: 860px) {
-  .reviews {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 460px) {
-  .reviewCard {
-    flex-direction: column;
-  }
 }
