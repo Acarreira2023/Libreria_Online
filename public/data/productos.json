@@ -1,122 +1,122 @@
 [
   {
     "id": "libro-01",
-    "titulo": "React desde Cero",
-    "autor": "Sofia Mercado",
+    "titulo": "React - practico",
+    "autor": "Pello Xabier Altadill Izura",
     "categoria": "Tecnico",
     "precio": 18500,
     "stock": 8,
-    "imagen": "/images/react-desde-cero.svg",
-    "descripcion": "Una guia practica para comprender componentes, props, estado y eventos creando interfaces modernas."
+    "imagen": "/images/React-práctico.webp",
+    "descripcion": "React es una de las herramientas mas relevantes del desarrollo web actual, utilizada por empresas como Airbnb y Netflix. Esta obra enseña a organizar interfaces en componentes reutilizables y gestionar el HTML mediante un DOM virtual. Tambien aborda front-end, escritorio, React Native y aplicaciones full-stack con Next.js."
   },
   {
     "id": "libro-02",
     "titulo": "JavaScript Moderno",
-    "autor": "Mateo Alvarez",
+    "autor": "Jay Nans y Roger Beans-Rivet",
     "categoria": "Tecnico",
     "precio": 21400,
     "stock": 5,
-    "imagen": "/images/javascript-moderno.svg",
-    "descripcion": "Conceptos actuales de JavaScript: modulos, asincronia, arrays, objetos y buenas practicas para la web."
+    "imagen": "/images/JavaScript-Moderna.webp",
+    "descripcion": "Una guia completa para todos los niveles que conecta los principios basicos con tecnicas de vanguardia. Incluye fundamentos, manipulacion del DOM, Node.js, closures, programacion asincronica, diseño basado en eventos, optimizacion, depuracion con Jest y estandares ES6+."
   },
   {
     "id": "libro-03",
-    "titulo": "La Casa del Silencio",
-    "autor": "Elena Varela",
+    "titulo": "La casa de los silencios",
+    "autor": "Victor Ironcrusher",
     "categoria": "Terror",
     "precio": 17200,
     "stock": 6,
-    "imagen": "/images/libro-terror.svg",
-    "descripcion": "Una novela inquietante sobre una familia que descubre secretos ocultos en una casa abandonada."
+    "imagen": "/images/La-casa-de-los-silencios.webp",
+    "descripcion": "Una novela corta de terror psicologico sobre una estudiante de historia que investiga una casa abandonada en un pueblo remoto. Su atmosfera inquietante y lenguaje accesible la vuelven ideal para lectores de nivel B1-B2 de español."
   },
   {
     "id": "libro-04",
-    "titulo": "Sombras en el Bosque",
-    "autor": "Martin Casal",
+    "titulo": "Sombras en el bosque",
+    "autor": "Phoebe Locke",
     "categoria": "Terror",
     "precio": 15800,
     "stock": 9,
-    "imagen": "/images/libro-sombras.svg",
-    "descripcion": "Relatos de terror psicologico donde cada sendero parece esconder una presencia imposible de explicar."
+    "imagen": "/images/Sombras-en-el-bosque.webp",
+    "descripcion": "Un thriller que conecta un asesinato en 1990, una desaparicion en el año 2000 y un juicio en 2018, todos vinculados por la figura siniestra de El hombre alto. Recomendado para fans de Stephen King y Stranger Things."
   },
   {
     "id": "libro-05",
-    "titulo": "Cartas de Abril",
-    "autor": "Lucia Ferrer",
+    "titulo": "Cartas para Abril",
+    "autor": "Paula Ramos",
     "categoria": "Romantico",
     "precio": 14900,
     "stock": 10,
-    "imagen": "/images/libro-romantico.svg",
-    "descripcion": "Una historia de amor, distancia y segundas oportunidades narrada a traves de cartas encontradas."
+    "imagen": "/images/Cartas-para-Abril.webp",
+    "descripcion": "Un relato sobre lo dificil que resulta madurar. La protagonista narra su vida caotica despues de un verano intenso y sus constantes tropiezos en la flor de la vida."
   },
   {
     "id": "libro-06",
-    "titulo": "Cafe para Dos",
-    "autor": "Nicolas Rivas",
+    "titulo": "Un beso al aire",
+    "autor": "Sandra Miro",
     "categoria": "Romantico",
     "precio": 13600,
     "stock": 7,
-    "imagen": "/images/libro-cafe.svg",
-    "descripcion": "Dos desconocidos se cruzan cada jueves en el mismo cafe y descubren una conexion inesperada."
+    "imagen": "/images/Un-beso-al -aire.webp",
+    "descripcion": "La historia de Gabriela y Adrian. Lo que empieza como una cena casual se transforma en una relacion que altera prioridades y sueños, demostrando que algunos amores merecen cada latido."
   },
   {
     "id": "libro-07",
-    "titulo": "El Ultimo Testigo",
-    "autor": "Camila Duarte",
+    "titulo": "El ultimo testigo",
+    "autor": "John Grisham",
     "categoria": "Suspenso",
     "precio": 18900,
     "stock": 5,
-    "imagen": "/images/libro-suspenso.svg",
-    "descripcion": "Un thriller atrapante sobre una investigacion donde todos mienten y una sola persona vio la verdad."
+    "imagen": "/images/El-último-testigo.webp",
+    "descripcion": "Un drama judicial que funciona como precuela de El soborno. Presenta el primer juicio por asesinato de una jueza y la lucha entre un defensor desbordado y un fiscal ambicioso."
   },
   {
     "id": "libro-08",
-    "titulo": "Clave Medianoche",
-    "autor": "Tomas Cabrera",
+    "titulo": "En sus sueños",
+    "autor": "Blake Pierce",
     "categoria": "Suspenso",
     "precio": 20100,
     "stock": 4,
-    "imagen": "/images/libro-clave.svg",
-    "descripcion": "Una carrera contra el tiempo para descifrar una clave antes de que desaparezca la prueba final."
+    "imagen": "/images/En-sus-sueños.webp",
+    "descripcion": "Septima entrega de la serie de la sheriff Jenna Graves. En este caso debe detener a un asesino que usa el terror y los sueños lucidos como arma para provocar ataques al corazon."
   },
   {
     "id": "libro-09",
-    "titulo": "El Poder de la Mente",
-    "autor": "Valentina Rios",
+    "titulo": "Muchas vidas, muchos maestros",
+    "autor": "Brian Weiss",
     "categoria": "Metafisico",
     "precio": 16300,
     "stock": 8,
-    "imagen": "/images/libro-mente.svg",
-    "descripcion": "Reflexiones y ejercicios para explorar el pensamiento, la intencion y el crecimiento personal."
+    "imagen": "/images/muchas-vidas-muchos-maestros.webp",
+    "descripcion": "El jefe de psiquiatria del hospital Mount Sinai relata su experiencia con una paciente que, bajo hipnosis, recordo vidas pasadas y contacto con Maestros espirituales. Un best-seller que une ciencia y metafisica."
   },
   {
     "id": "libro-10",
-    "titulo": "Energia Interior",
-    "autor": "Bruno Salvatierra",
+    "titulo": "Metafisica para todos",
+    "autor": "Gabriel Padilla Lopez",
     "categoria": "Metafisico",
     "precio": 15200,
     "stock": 6,
-    "imagen": "/images/libro-energia.svg",
-    "descripcion": "Una lectura introductoria sobre equilibrio, habitos conscientes y conexion entre mente y cuerpo."
+    "imagen": "/images/Metafísica para todos.webp",
+    "descripcion": "Un manual de espiritualidad para Trabajadores de Luz. Propone el despertar de la conciencia a traves de la comprension del poder y la voluntad divina."
   },
   {
     "id": "libro-11",
-    "titulo": "Camino de Luz",
-    "autor": "Ana Robles",
+    "titulo": "Tu alma tiene un plan",
+    "autor": "Lisa A. Barnett",
     "categoria": "Espiritual",
     "precio": 14100,
     "stock": 9,
-    "imagen": "/images/libro-luz.svg",
-    "descripcion": "Un libro de espiritualidad cotidiana para encontrar calma, proposito y gratitud en pequenas acciones."
+    "imagen": "/images/Tu-alma-tiene-un-plan.webp",
+    "descripcion": "Basado en la sabiduria de los Registros Akasicos, este libro ayuda a identificar contratos sagrados y patrones karmicos para alinearse con el proposito vital del alma."
   },
   {
     "id": "libro-12",
-    "titulo": "Meditaciones Simples",
-    "autor": "Federico Luna",
+    "titulo": "El viajero espiritual: un recorrido por los jardines del alma",
+    "autor": "Asuncion Gomez Garcia",
     "categoria": "Espiritual",
     "precio": 12900,
     "stock": 11,
-    "imagen": "/images/libro-meditaciones.svg",
-    "descripcion": "Practicas breves de meditacion y respiracion para incorporar momentos de paz durante el dia."
+    "imagen": "/images/libro-luz.svg",
+    "descripcion": "Una invitacion a una aventura interior para aprender a comunicarse con guias espirituales y comprender que sucede despues de la muerte."
   }
 ]
