@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa El Poder de la Mente">
-  <rect width="640" height="480" fill="#edf7f6"/>
-  <rect x="158" y="48" width="320" height="384" rx="12" fill="#71a7a6"/>
-  <circle cx="318" cy="170" r="76" fill="#ffffff"/>
-  <path d="M276 170c0-48 84-48 84 0c0 34-24 42-24 70h-36c0-28-24-36-24-70z" fill="#1f6f8b"/>
-  <text x="202" y="360" fill="#ffffff" font-family="Arial" font-size="34" font-weight="700">El Poder</text>
-  <text x="202" y="400" fill="#16202a" font-family="Arial" font-size="30" font-weight="700">de la Mente</text>
-</svg>

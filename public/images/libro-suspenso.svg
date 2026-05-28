@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa El Ultimo Testigo">
-  <rect width="640" height="480" fill="#e7edf2"/>
-  <rect x="158" y="48" width="320" height="384" rx="12" fill="#16202a"/>
-  <circle cx="318" cy="178" r="78" fill="#ffffff"/>
-  <circle cx="318" cy="178" r="28" fill="#1f6f8b"/>
-  <rect x="300" y="256" width="36" height="94" fill="#d95f43"/>
-  <text x="202" y="386" fill="#ffffff" font-family="Arial" font-size="32" font-weight="700">El Ultimo</text>
-  <text x="202" y="420" fill="#f6cf65" font-family="Arial" font-size="30" font-weight="700">Testigo</text>
-</svg>

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa Sombras en el Bosque">
-  <rect width="640" height="480" fill="#17241f"/>
-  <rect x="160" y="50" width="318" height="380" rx="12" fill="#24382f"/>
-  <path d="M220 350L270 120L320 350Z" fill="#0f1815"/>
-  <path d="M310 350L370 95L430 350Z" fill="#111c18"/>
-  <circle cx="400" cy="112" r="42" fill="#f6cf65"/>
-  <text x="208" y="394" fill="#ffffff" font-family="Arial" font-size="34" font-weight="700">Sombras</text>
-  <text x="208" y="424" fill="#d5dde6" font-family="Arial" font-size="24" font-weight="700">en el Bosque</text>
-</svg>

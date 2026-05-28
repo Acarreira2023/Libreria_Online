@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa Cafe para Dos">
-  <rect width="640" height="480" fill="#f5ebe0"/>
-  <rect x="158" y="48" width="320" height="384" rx="12" fill="#8f5b3f"/>
-  <circle cx="320" cy="180" r="74" fill="#ffffff"/>
-  <circle cx="320" cy="180" r="48" fill="#5b3728"/>
-  <path d="M370 165h36c18 0 18 38 0 38h-36" fill="none" stroke="#ffffff" stroke-width="14"/>
-  <text x="218" y="356" fill="#ffffff" font-family="Arial" font-size="42" font-weight="700">Cafe</text>
-  <text x="218" y="398" fill="#f6cf65" font-family="Arial" font-size="32" font-weight="700">para Dos</text>
-</svg>

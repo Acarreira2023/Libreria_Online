@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa Energia Interior">
-  <rect width="640" height="480" fill="#fff8dc"/>
-  <rect x="158" y="48" width="320" height="384" rx="12" fill="#f6cf65"/>
-  <circle cx="318" cy="190" r="92" fill="#ffffff" opacity="0.9"/>
-  <circle cx="318" cy="190" r="56" fill="#d95f43"/>
-  <circle cx="318" cy="190" r="24" fill="#16202a"/>
-  <text x="202" y="360" fill="#16202a" font-family="Arial" font-size="38" font-weight="700">Energia</text>
-  <text x="202" y="400" fill="#1f6f8b" font-family="Arial" font-size="32" font-weight="700">Interior</text>
-</svg>
