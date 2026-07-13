@@ -1,0 +1,13 @@
+{
+  "empresa": "Librería Online",
+  "descripcion": "Somos una librería moderna dedicada a proveer materiales educativos de primer nivel, novelas apasionantes y libros de bienestar general a toda nuestra comunidad de lectores y profesionales.",
+  "telefono": "+54 11 5555-0199",
+  "email": "contacto@talentolab-libreria.com",
+  "direccion": "Av. Corrientes 1234, CABA, Argentina",
+  "valores": [
+    "Pasión por la lectura",
+    "Educación continua en programación y tecnología",
+    "Servicio de atención al cliente de excelencia",
+    "Rapidez y seguridad en envíos"
+  ]
+}

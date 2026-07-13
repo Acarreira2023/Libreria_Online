@@ -1,5 +1,4 @@
-// src/components/Reviews/Reviews.jsx
-import { Star } from 'lucide-react';
+import { FaStar } from 'react-icons/fa';
 import styles from './Reviews.module.css';
 
 const reviews = [
@@ -56,15 +55,13 @@ function Reviews() {
                 aria-label={`Calificacion de ${review.rating} estrellas`}
               >
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <Star
+                  <FaStar
                     className={
                       star <= review.rating
                         ? styles.starFilled
                         : styles.starEmpty
                     }
                     size={15}
-                    fill="currentColor"
-                    strokeWidth={0}
                     key={star}
                   />
                 ))}
@@ -78,4 +75,4 @@ function Reviews() {
   );
 }
 
-export default Reviews;
+export default Reviews;
