@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Container, Row, Col, Card, Button, Form, Alert, Table, Modal, Spinner } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Form, Alert, Table, Modal, Spinner, InputGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { FaTrash, FaArrowLeft, FaTicketAlt, FaCheckCircle, FaShoppingBag, FaUser, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { useCarrito } from '../../context/CarritoContext.jsx';
-import { formatPrice } from '../../utils/formatPrice.js';
+import { formatPrice, getFinalPrice, hasOffer } from '../../utils/formatPrice.js';
 import { db } from '../../services/firebase.js';
 import { collection, addDoc, getDocs, doc, writeBatch, getDoc } from 'firebase/firestore';
 import styled from 'styled-components';
@@ -110,6 +110,8 @@ function CartView() {
           id: item.id,
           titulo: item.titulo,
           precio: item.precio,
+          precioFinal: getFinalPrice(item),
+          descuento: hasOffer(item) ? item.descuento : 0,
           cantidad: item.quantity
         })),
         totalOriginal: totalCarrito,
@@ -127,7 +129,7 @@ function CartView() {
       // Batch update: deduct stock for each purchased book in Firestore
       const batch = writeBatch(db);
       for (const item of carrito) {
-        const productRef = doc(db, 'productos', item.id);
+        const productRef = doc(db, 'libros', item.id);
         const productSnap = await getDoc(productRef);
         if (productSnap.exists()) {
           const currentStock = productSnap.data().stock;
@@ -227,7 +229,11 @@ function CartView() {
                   </tr>
                 </thead>
                 <tbody>
-                  {carrito.map((item) => (
+                  {carrito.map((item) => {
+                    const itemFinalPrice = getFinalPrice(item);
+                    const itemHasOffer = hasOffer(item);
+
+                    return (
                     <tr key={item.id}>
                       <td>
                         <div className="d-flex align-items-center gap-3 py-1">
@@ -242,9 +248,21 @@ function CartView() {
                           </div>
                         </div>
                       </td>
-                      <td className="text-end">{formatPrice(item.precio)}</td>
+                      <td className="text-end">
+                        <div className="d-flex flex-column align-items-end">
+                          {itemHasOffer && (
+                            <small className="text-muted text-decoration-line-through">
+                              {formatPrice(item.precio)}
+                            </small>
+                          )}
+                          <span>{formatPrice(itemFinalPrice)}</span>
+                          {itemHasOffer && (
+                            <small className="text-success fw-semibold">{item.descuento}% OFF</small>
+                          )}
+                        </div>
+                      </td>
                       <td className="text-center">{item.quantity}</td>
-                      <td className="text-end fw-bold text-dark">{formatPrice(item.precio * item.quantity)}</td>
+                      <td className="text-end fw-bold text-dark">{formatPrice(itemFinalPrice * item.quantity)}</td>
                       <td className="text-center">
                         <Button
                           variant="link"
@@ -256,7 +274,8 @@ function CartView() {
                         </Button>
                       </td>
                     </tr>
-                  ))}
+                  );
+                  })}
                 </tbody>
               </Table>
             </Card.Body>

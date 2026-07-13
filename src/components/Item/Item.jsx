@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FaHeart, FaShoppingBag } from 'react-icons/fa';
-import { formatPrice } from '../../utils/formatPrice.js';
+import { formatPrice, getFinalPrice, hasOffer } from '../../utils/formatPrice.js';
 import styled from 'styled-components';
 
 const StyledCard = styled(Card)`
@@ -68,6 +68,20 @@ const FavoriteBtn = styled.button`
   }
 `;
 
+const OfferBadge = styled.span`
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 5;
+  border-radius: 999px;
+  background: #e63946;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 5px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+`;
+
 const BookCategory = styled.span`
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -103,8 +117,16 @@ const BookDesc = styled(Card.Text)`
   height: 3.6em;
 `;
 
+const OriginalPrice = styled.span`
+  color: #8a939b;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+`;
+
 function Item({ product }) {
   const [isFavorite, setIsFavorite] = useState(false);
+  const isOnSale = hasOffer(product);
+  const finalPrice = getFinalPrice(product);
 
   // Clase 4: Función marcarComoFavorito que alterna un booleano usando useState
   const marcarComoFavorito = (e) => {
@@ -115,6 +137,8 @@ function Item({ product }) {
 
   return (
     <StyledCard>
+      {isOnSale && <OfferBadge>{product.descuento}% OFF</OfferBadge>}
+
       <FavoriteBtn
         $isFavorite={isFavorite}
         onClick={marcarComoFavorito}
@@ -135,7 +159,8 @@ function Item({ product }) {
 
         <div className="mt-auto d-flex justify-content-between align-items-center pt-3 border-top border-light">
           <div className="d-flex flex-column">
-            <span className="fw-bold text-dark fs-5">{formatPrice(product.precio)}</span>
+            {isOnSale && <OriginalPrice>{formatPrice(product.precio)}</OriginalPrice>}
+            <span className="fw-bold text-dark fs-5">{formatPrice(finalPrice)}</span>
             <span className="text-muted small">Stock: {product.stock}</span>
           </div>
           <Link to={`/producto/${product.id}`} className="text-decoration-none">

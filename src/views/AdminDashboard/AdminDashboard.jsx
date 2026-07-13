@@ -233,7 +233,7 @@ function AdminDashboard() {
   // Seed DB
   const handleSeed = async () => {
     const confirmed = window.confirm(
-      'Esta accion cargara el catalogo inicial en la coleccion "libros" de Firestore. Si ya existen libros, no se duplicaran. ¿Deseas continuar?',
+      'Esta accion cargara o actualizara el catalogo en la coleccion "libros" de Firestore. ¿Deseas continuar?',
     );
 
     if (!confirmed) {
@@ -274,7 +274,7 @@ function AdminDashboard() {
             disabled={seeding || isLoading}
             className="d-flex align-items-center gap-2"
           >
-            <FaDatabase /> {seeding ? 'Importando...' : 'Cargar libros en Firebase'}
+            <FaDatabase /> {seeding ? 'Actualizando...' : 'Actualizar libros en Firebase'}
           </Button>
           <Button
             variant="primary"
@@ -324,7 +324,7 @@ function AdminDashboard() {
                     {products.length === 0 ? (
                       <tr>
                         <td colSpan="6" className="text-center py-4 text-muted">
-                          No hay libros registrados. Utiliza el botón &quot;Cargar libros en Firebase&quot; para cargar el catalogo inicial.
+                          No hay libros registrados. Utiliza el botón &quot;Actualizar libros en Firebase&quot; para cargar el catalogo inicial.
                         </td>
                       </tr>
                     ) : (

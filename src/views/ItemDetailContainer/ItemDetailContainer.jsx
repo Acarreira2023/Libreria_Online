@@ -7,7 +7,7 @@ import ItemCount from '../../components/ItemCount/ItemCount.jsx';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner.jsx';
 import { useCarrito } from '../../context/CarritoContext.jsx';
 import { getProductById } from '../../services/products.js';
-import { formatPrice } from '../../utils/formatPrice.js';
+import { formatPrice, getFinalPrice, hasOffer } from '../../utils/formatPrice.js';
 import styled from 'styled-components';
 
 const DetailContainer = styled(Container)`
@@ -45,6 +45,23 @@ const BookPrice = styled.span`
   font-size: 2rem;
   font-weight: 800;
   color: #1d3557;
+`;
+
+const OriginalPrice = styled.span`
+  color: #8a939b;
+  font-size: 1rem;
+  text-decoration: line-through;
+`;
+
+const OfferBadge = styled.span`
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  background: #e63946;
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 800;
+  padding: 5px 12px;
 `;
 
 const FavoriteButton = styled(Button)`
@@ -109,6 +126,8 @@ function ItemDetailContainer() {
   const quantityInCart = obtenerCantidadItem(product.id);
   const availableStock = product.stock - quantityInCart;
   const hasStock = availableStock > 0;
+  const isOnSale = hasOffer(product);
+  const finalPrice = getFinalPrice(product);
 
   const handleAddToCart = () => {
     setIsAdding(true);
@@ -154,7 +173,15 @@ function ItemDetailContainer() {
                 <Row className="align-items-center">
                   <Col xs={6}>
                     <div className="text-muted small">Precio</div>
-                    <BookPrice>{formatPrice(product.precio)}</BookPrice>
+                    <div className="d-flex flex-column align-items-start gap-1">
+                      {isOnSale && (
+                        <>
+                          <OfferBadge>{product.descuento}% OFF</OfferBadge>
+                          <OriginalPrice>{formatPrice(product.precio)}</OriginalPrice>
+                        </>
+                      )}
+                      <BookPrice>{formatPrice(finalPrice)}</BookPrice>
+                    </div>
                   </Col>
                   <Col xs={6} className="text-end">
                     <span className={`badge ${hasStock ? 'bg-success' : 'bg-danger'} fs-6`}>

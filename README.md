@@ -1,96 +1,148 @@
-# eCommerce Librería Online
+# Libreria Online
 
-Este proyecto consiste en una aplicación web de eCommerce completa, funcional y responsiva de una librería en línea.
+Aplicacion web de eCommerce para una libreria online desarrollada con React y Vite. El proyecto permite navegar un catalogo de libros, ver el detalle de cada producto, administrar un carrito de compras, iniciar sesion y gestionar datos desde un panel de administracion conectado a Firebase.
 
-La aplicación implementa una arquitectura modular con división en componentes contenedores y presentacionales, un sistema de estado global para el carrito de compras y la sesión de usuarios, y conexión directa a la base de datos y autenticación en la nube con **Firebase**.
+## Tecnologias
 
----
+- React 19
+- Vite
+- React Router DOM
+- Context API
+- Firebase Authentication
+- Cloud Firestore
+- React Bootstrap y Bootstrap 5
+- Styled Components
+- React Icons y Lucide React
+- React Helmet Async
 
-## 🚀 Tecnologías Utilizadas
+## Funcionalidades principales
 
-- **Frontend Core**: React 19 (Vite) & React Router DOM v7
-- **Bases de Datos & Auth**: Firebase v10 (Firestore & Authentication)
-- **Estilización & UI**:
-  - **React-Bootstrap** & Bootstrap 5 (Grillas responsivas y componentes UX)
-  - **Styled-components** (Estilos dinámicos y micro-animaciones premium)
-  - **React Icons** (Iconografía interactiva y accesible)
-- **SEO & Metadata**: React Helmet Async (Gestión dinámica de `<title>` y `<meta>` por vista)
+- Catalogo de libros cargado desde Firestore.
+- Filtros y busqueda por libros.
+- Vista de detalle por ruta dinamica.
+- Carrito de compras con estado global.
+- Checkout con registro de ordenes.
+- Login y perfil de usuario con Firebase Auth.
+- Rutas protegidas para `/perfil` y `/admin`.
+- Panel de administracion para gestionar libros y cupones.
+- Carga y actualizacion del catalogo mediante boton de admin.
+- Ofertas en libros seleccionados con precio original y precio final.
+- Vista institucional `/nosotros`.
+- Soporte para rutas SPA en despliegues con `public/_redirects`.
 
----
+## Colecciones de Firestore
 
-## 📌 Requerimientos Implementados
+La aplicacion utiliza estas colecciones:
 
-### 1. Gestión de Estado Global y Autenticación
-- **CarritoContext (Context API)**: Estado global para gestionar la adición de libros, remoción individual, vaciado completo y cálculo automático del total de la compra y la cantidad de ítems.
-- **AuthContext (Firebase Auth)**: Contexto de sesión para el registro y login de usuarios conectados a Firebase Authentication.
-- **Rutas Protegidas**: Rutas privadas `/perfil` y `/admin` protegidas mediante un componente `ProtectedRoute` que redirige a `/login` si no hay sesión activa.
+- `libros`: catalogo principal de libros.
+- `cupones`: codigos de descuento.
+- `ordenes`: ordenes generadas durante el checkout.
+- `equipo`: datos auxiliares usados por secciones institucionales.
 
-### 2. Integración con Firestore y CRUD
-- **Carga Dinámica**: Catálogo y detalles consumidos directamente desde la colección `productos` de Firestore.
-- **Administración Completa (CRUD)**:
-  - **Create**: Formulario validado para agregar nuevos libros.
-  - **Read**: Visualización de existencias de libros en una tabla interactiva.
-  - **Update**: Edición de campos de libros existentes en Firestore.
-  - **Delete**: Eliminación de registros con un **Modal de Confirmación** para evitar borrados accidentales.
-- **Gestión de Cupones**: Panel para crear y borrar cupones de descuento en tiempo real mediante `addDoc` y `deleteDoc`.
+Importante: el catalogo principal se lee desde la coleccion `libros`.
 
-### 3. Usabilidad, Búsqueda y Paginación
-- **Búsqueda en Tiempo Real**: Barra de filtrado reactiva en el catálogo principal que busca coincidencias en título o autor mientras el usuario escribe.
-- **Paginación**: Paginador dinámico para segmentar los libros (6 por página) optimizando la carga visual.
-- **Checkout con Transacción**: Formulario que valida los datos del comprador y guarda una orden en la colección `ordenes` de Firestore, reduciendo automáticamente el stock de los productos comprados.
+## Rutas
 
-### 4. Componentes
-- **Asistentes**: Componente reutilizable `Asistente` por props que renderiza las tarjetas del staff pedagógico.
-- **Nosotros**: Consumo asincrónico del archivo local `nosotros.json` con manejo de estados de carga (Spinner) y error.
-- **Footer Dinámico**: Carga dinámica del equipo de staff desde la colección `equipo` de Firestore.
+- `/`: inicio.
+- `/productos`: catalogo de libros.
+- `/producto/:id`: detalle de un libro.
+- `/carrito`: carrito de compras.
+- `/login`: acceso de usuario.
+- `/perfil`: perfil protegido.
+- `/admin`: panel de administracion protegido.
+- `/nosotros`: informacion institucional.
 
----
+## Instalacion local
 
-## 🛠️ Instalación y Configuración Local
+Instalar dependencias:
 
-Sigue los siguientes pasos para instalar y ejecutar el proyecto en tu entorno local:
-
-### 1. Clonar el repositorio e instalar dependencias
 ```bash
-# Instalar dependencias
 npm install
 ```
 
-### 2. Configurar las Variables de Entorno
-Crea un archivo `.env` en la raíz del proyecto (puedes tomar como referencia el archivo `.env.example`) y completa los campos con las credenciales de tu proyecto de Firebase:
+Iniciar el servidor de desarrollo:
 
-```env
-VITE_FIREBASE_API_KEY=tu_api_key_aqui
-VITE_FIREBASE_AUTH_DOMAIN=tu_auth_domain_aqui
-VITE_FIREBASE_PROJECT_ID=tu_project_id_aqui
-VITE_FIREBASE_STORAGE_BUCKET=tu_storage_bucket_aqui
-VITE_FIREBASE_MESSAGING_SENDER_ID=tu_messaging_sender_id_aqui
-VITE_FIREBASE_APP_ID=tu_app_id_aqui
-```
-
-### 3. Ejecutar el servidor de desarrollo
 ```bash
-# Iniciar servidor local
 npm run dev
 ```
 
----
+Compilar para produccion:
 
-## 🗃️ Inicializar la Base de Datos (Seeding)
-
-Para facilitar la evaluación y evitar ingresar datos manualmente en Firestore, la aplicación incluye una utilidad de auto-poblado de base de datos.
-1. Inicia sesión con cualquier cuenta o crea una nueva en `/login`.
-2. Dirígete al panel `/admin` (a través del botón "Mi Perfil" o el enlace "Admin" del menú).
-3. Haz clic en el botón amarillo **"Poblar Base de Datos"**.
-4. ¡Listo! Esto subirá de forma automática los 12 libros de muestra, los integrantes del equipo para el Footer y los cupones válidos (`TALENTOLAB` y `REACT2026`) a tu Firestore.
-
----
-
-## 📦 Construcción para Producción
-
-Para compilar y optimizar la aplicación para su despliegue en Vercel o Netlify:
 ```bash
 npm run build
 ```
 
-*Nota para Netlify: El archivo `public/_redirects` ya está configurado para dar soporte a las rutas internas del SPA.*
+Vista previa del build:
+
+```bash
+npm run preview
+```
+
+Si `npm` falla en esta PC por la instalacion global, se puede ejecutar con:
+
+```bash
+node "C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js" run dev
+```
+
+## Variables de entorno
+
+Crear un archivo `.env` en la raiz del proyecto con las credenciales de Firebase:
+
+```env
+VITE_FIREBASE_API_KEY=tu_api_key
+VITE_FIREBASE_AUTH_DOMAIN=tu_auth_domain
+VITE_FIREBASE_PROJECT_ID=tu_project_id
+VITE_FIREBASE_STORAGE_BUCKET=tu_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=tu_messaging_sender_id
+VITE_FIREBASE_APP_ID=tu_app_id
+```
+
+El archivo `src/services/firebase.js` toma estos valores para inicializar Firebase, Firestore y Authentication.
+
+## Inicializar Firestore
+
+El proyecto incluye una utilidad de seed en:
+
+```text
+src/utils/seed.js
+```
+
+Para cargar o actualizar los 12 libros iniciales:
+
+1. Configurar correctamente el archivo `.env`.
+2. Iniciar la app con `npm run dev`.
+3. Iniciar sesion desde `/login`.
+4. Entrar a `/admin`.
+5. Presionar el boton `Actualizar libros en Firebase`.
+6. Confirmar la accion.
+
+La importacion usa `writeBatch` y carga los datos en la coleccion `libros`. Cada libro tiene un ID fijo, por lo que el boton sirve para crear o actualizar el catalogo sin duplicar esos 12 libros.
+
+## Panel de administracion
+
+Desde `/admin` se puede:
+
+- Importar el catalogo inicial en Firestore.
+- Actualizar el catalogo base de 12 libros.
+- Ver libros cargados.
+- Crear nuevos libros.
+- Editar libros existentes.
+- Eliminar libros con confirmacion.
+- Crear y borrar cupones de descuento.
+
+## Datos del catalogo inicial
+
+El seed carga 12 libros, dos por categoria:
+
+- Tecnico
+- Terror
+- Romantico
+- Suspenso
+- Metafisico
+- Espiritual
+
+Las imagenes de portada se sirven desde `public/images`.
+
+## Despliegue
+
+El proyecto puede desplegarse en Vercel o Netlify. Para Netlify, `public/_redirects` permite que las rutas internas de React Router funcionen al recargar la pagina.

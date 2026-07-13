@@ -1,4 +1,5 @@
 import { createContext, useContext, useMemo, useState } from 'react';
+import { getFinalPrice } from '../utils/formatPrice.js';
 
 const CarritoContext = createContext(null);
 
@@ -48,7 +49,7 @@ export function CarritoProvider({ children }) {
   );
 
   const totalCarrito = useMemo(
-    () => carrito.reduce((total, item) => total + item.precio * item.quantity, 0),
+    () => carrito.reduce((total, item) => total + getFinalPrice(item) * item.quantity, 0),
     [carrito]
   );
 
