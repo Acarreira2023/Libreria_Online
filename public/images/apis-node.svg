@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa APIs con Node.js">
-  <rect width="640" height="480" fill="#dff1e8"/>
-  <rect x="150" y="42" width="320" height="392" rx="12" fill="#24764b"/>
-  <circle cx="235" cy="160" r="46" fill="#ffffff"/>
-  <circle cx="385" cy="160" r="46" fill="#ffffff"/>
-  <rect x="235" y="154" width="150" height="12" fill="#f6cf65"/>
-  <text x="205" y="276" fill="#ffffff" font-family="Arial" font-size="58" font-weight="700">APIs</text>
-  <text x="205" y="334" fill="#f6cf65" font-family="Arial" font-size="42" font-weight="700">Node.js</text>
-</svg>

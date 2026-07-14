@@ -132,7 +132,7 @@ function Nosotros() {
 
           <section className="mt-5">
             <h2 className="h3 mb-4 text-center d-flex align-items-center justify-content-center gap-2">
-              <FaUsers /> Nuestro Staff de Asistencia (Clase 2)
+              <FaUsers /> Nuestro Staff de Asistencia
             </h2>
             <p className="text-center text-muted mb-4">
               Te presentamos a los asistentes pedagógicos encargados de guiar el desarrollo de este proyecto.

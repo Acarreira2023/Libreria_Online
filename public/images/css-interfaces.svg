@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Tapa CSS para Interfaces">
-  <rect width="640" height="480" fill="#eaf2f5"/>
-  <rect x="132" y="56" width="330" height="368" rx="12" fill="#ffffff"/>
-  <rect x="168" y="96" width="258" height="64" rx="8" fill="#71a7a6"/>
-  <rect x="168" y="184" width="110" height="150" rx="8" fill="#1f6f8b"/>
-  <rect x="298" y="184" width="128" height="150" rx="8" fill="#d95f43"/>
-  <text x="168" y="384" fill="#16202a" font-family="Arial" font-size="42" font-weight="700">CSS UI</text>
-</svg>
