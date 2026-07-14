@@ -87,20 +87,20 @@ export const catalogoLibros = [
     categoria: 'Suspenso',
     precio: 18900,
     stock: 5,
-    imagen: '/images/El-\u00faltimo-testigo.webp',
+    imagen: '/images/El-último-testigo.webp',
     descripcion:
       'Un drama judicial que funciona como precuela de El soborno. Presenta el primer juicio por asesinato de una jueza y la lucha entre un defensor desbordado y un fiscal ambicioso.',
     oferta: true,
-    descuento: 18,
+    descuento: 15,
   },
   {
     id: 'en-sus-suenos',
-    titulo: 'En sus sue\u00f1os',
+    titulo: 'En sus sueños',
     autor: 'Blake Pierce',
     categoria: 'Suspenso',
     precio: 20100,
     stock: 4,
-    imagen: '/images/En-sus-sue\u00f1os.webp',
+    imagen: '/images/En-sus-sueños.webp',
     descripcion:
       'Septima entrega de la serie de la sheriff Jenna Graves. En este caso debe detener a un asesino que usa el terror y los sue\u00f1os lucidos como arma para provocar ataques al corazon.',
     oferta: false,
@@ -126,7 +126,7 @@ export const catalogoLibros = [
     categoria: 'Metafisico',
     precio: 15200,
     stock: 6,
-    imagen: '/images/Metaf\u00edsica para todos.webp',
+    imagen: '/images/Metafísica para todos.webp',
     descripcion:
       'Un manual de espiritualidad para Trabajadores de Luz. Propone el despertar de la conciencia a traves de la comprension del poder y la voluntad divina.',
     oferta: false,
