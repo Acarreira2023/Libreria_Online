@@ -21,7 +21,7 @@ function NavBar() {
             <CartWidget />
           </Nav.Link>
           {user ? (
-            <Nav.Link as={NavLink} to="/perfil" className="d-flex align-items-center gap-1 btn btn-primary text-white px-3 py-1 rounded">
+            <Nav.Link as={NavLink} to="/perfil" className="d-flex align-items-center gap-1 btn btn-primary text-black px-3 py-1 rounded">
               <FaUser size={14} /> Mi Perfil
             </Nav.Link>
           ) : (
