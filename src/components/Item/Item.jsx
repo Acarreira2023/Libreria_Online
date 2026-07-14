@@ -24,22 +24,26 @@ const StyledCard = styled(Card)`
 `;
 
 const CoverContainer = styled.div`
-  height: 260px;
+  height: 200px;
   overflow: hidden;
-  background-color: #f8f9fa;
+  background-color: #f0f2f5;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 12px;
 `;
 
 const CoverImage = styled.img`
-  width: 100%;
+  width: auto;
   height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  object-fit: contain;
   transition: transform 0.3s ease;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   
   ${StyledCard}:hover & {
-    transform: scale(1.05);
+    transform: scale(1.04);
   }
 `;
 

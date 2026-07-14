@@ -15,6 +15,22 @@ function NavBar() {
           <span className="fw-bold text-primary">Librería Online</span>
         </Navbar.Brand>
 
+        {/* Botón Mi Perfil / Ingresar siempre visible */}
+        <div className="d-flex align-items-center gap-2 ms-auto me-2">
+          <Nav.Link as={NavLink} to="/carrito" className="pe-1 d-md-none">
+            <CartWidget />
+          </Nav.Link>
+          {user ? (
+            <Nav.Link as={NavLink} to="/perfil" className="d-flex align-items-center gap-1 btn btn-primary text-white px-3 py-1 rounded">
+              <FaUser size={14} /> Mi Perfil
+            </Nav.Link>
+          ) : (
+            <Nav.Link as={NavLink} to="/login" className="btn btn-outline-primary px-3 py-1 rounded">
+              Ingresar
+            </Nav.Link>
+          )}
+        </div>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto align-items-center">
@@ -34,20 +50,10 @@ function NavBar() {
             )}
           </Nav>
 
-          <Nav className="align-items-center gap-2">
+          <Nav className="align-items-center gap-2 d-none d-md-flex">
             <Nav.Link as={NavLink} to="/carrito" className="pe-3">
               <CartWidget />
             </Nav.Link>
-            
-            {user ? (
-              <Nav.Link as={NavLink} to="/perfil" className="d-flex align-items-center gap-1 btn btn-primary text-white px-3 py-1 rounded">
-                <FaUser size={14} /> Mi Perfil
-              </Nav.Link>
-            ) : (
-              <Nav.Link as={NavLink} to="/login" className="btn btn-outline-primary px-3 py-1 rounded">
-                Ingresar
-              </Nav.Link>
-            )}
           </Nav>
         </Navbar.Collapse>
       </Container>
